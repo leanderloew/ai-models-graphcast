@@ -232,7 +232,7 @@ class GraphcastModel(Model):
             save_output_xarray(
                 output=output,
                 write=self.write,
-                target_variables=self.task_config.target_variables,
+                target_variables=["2m_temperature"],
                 all_fields=self.all_fields,
                 ordering=self.ordering,
                 lead_time=self.lead_time,
